@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLIS Program Portfolio - Contact</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <!-- Contact Page -->
+
+    <header class="header container">
+        <img src="images/ra_logo_blue.png" alt="Logo" class="logo" width="100">
+        <input type="checkbox" id="nav-button-input">
+        <label id="nav-button" for="nav-button-input">&#9776;</label>
+        <nav class="navigation">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item">
+                    <a href="project.html">Projects</a>
+                    <input type="checkbox" id="dropdown-input">
+                    <label id="dropdown" for="dropdown-input">&#9660</label>
+                    <ul class="dropdown-items">
+                        <li class="nav-item"><a href="project.html#project1">Project 1</a></li>
+                        <li class="nav-item"><a href="project.html#project2">Project 2</a></li>
+                        <li class="nav-item"><a href="project.html#project3">Project 3</a></li>
+                        <li class="nav-item"><a href="project.html#project4">Project 4</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="reflection.html">Reflection</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-title page-title">
+            <h1>MLIS Program Portfolio</h1>
+            <h2>Contact Rosanna</h2>
+        </section>
+        <section class="contact-content container">
+        <form action="mailto:ravvx@missouri.edu?Subject=Portfolio/Professional%20Website%20Contact" method="post" enctype="text/plain">
+            <div class="firstname">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Your First Name" autofocus required>
+            </div>
+            <div class="lastname">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Your Last Name" required>
+            </div>
+            <div class="email">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            </div>
+            <div class="message">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+        </section>
+    </main>
+    <footer class="container">
+        <img src="images/ra_logo_blue.png" alt="Logo" class="logo" width="100">
+        <div class="footer-info">
+            <p>
+                <img src="images/email-icon.png" alt="Email Icon" width="20" class="footer-icon"> Rosanna Aponte ravvx@missouri.edu
+            </p>
+            <p>
+                <img src="images/phone-icon.png" alt="Phone Icon" width="20" class="footer-icon"> 111-123-4567
+            </p>
+            <p>
+                Copyright 2024 Rosanna Aponte
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

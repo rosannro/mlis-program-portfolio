@@ -265,6 +265,7 @@ footer {
 .page-toc td {
 	padding: 0 5px;
 }
+
 @media (max-width: 500px) {
 	.page-toc td:nth-child(2) {
 		width: 65%;
@@ -274,7 +275,6 @@ footer {
 		text-overflow: ellipsis;
 	}
 }
-
 
 .project-image img {
 	display: inline-block;
@@ -299,32 +299,6 @@ footer {
 		padding: 120px 20px 20px;
 	}
 }
-
-/* @media (min-width: 640px) and (max-width: 768px) {
-	.project {
-		display: inline-block;
-		width: 45%;
-		margin-left: 2%;
-		margin-right: 2%;
-		vertical-align: top;
-	}
-	.project-image {
-		position: relative;
-		width: 220px;
-		height: 220px;
-		border: 1px solid black;
-		margin: auto;
-		background-color: white;
-	}
-
-	.project-text {
-		width: 90%;
-		min-height: 1420px;
-		border: 1px solid black;
-		margin: -110px auto 30px;
-		padding: 130px 20px 20px;
-	}
-} */
 
 @media (min-width: 769px) {
 	.project .project-image, .project .project-text {
@@ -386,6 +360,98 @@ footer {
 		flex-direction: row;
 		gap: 30px;
 	}
+}
+
+/* Contact Page */
+
+.contact-title {
+	background-image: url("images/contact-title-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 25%;
+	height: 150px;
+}
+
+@media (min-width: 769px) {
+	.contact-title {
+		height: 250px;
+	}
+}
+
+form {
+	width: 90%;
+	margin: 80px auto 40px;
+}
+
+label, input, textarea {
+	display: block;
+	font-family: "Source Sans 3", sans-serif;
+	font-size: 16px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #356BA2;
+	border-radius: 5px;
+}
+
+label {
+	margin-bottom: 10px;
+	padding: 0;
+	border: none;
+}
+
+input:not([type="submit"]) {
+	width: 95%;
+	background-color: #FFFFFF;
+}
+
+input[type="submit"] {
+	width: 100px;
+	color: #FFFFFF;
+	background-color: #356BA2;
+}
+
+input[type="submit"]:hover {
+	background-color: #99CCFF;
+}
+
+textarea {
+	width: 95%;
+	height: 300px;
+	background-color: #FFFFFF;
+}
+
+@media (min-width: 640px) {
+	.firstname, .lastname, .email, .message {
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+	}
+
+	label {
+		width: 150px;
+	}
+}
+
+@media (min-width: 769px) {
+	.firstname, .lastname {
+		display: inline-block;
+		width: 40vw;
+		max-width: 500px;
+	}
+
+	.firstname label, .lastname label, .firstname input:not([type="submit"]), .lastname input:not([type="submit"]) {
+		display :inline-block;
+	}
+
+	.firstname label, .lastname label {
+		width: 38%;
+		max-width: 128px;
+	}
+
+	.firstname input:not([type="submit"]), .lastname input:not([type="submit"]) {
+		width: 50%;
+		max-width: 215px;
+	} 
 }
 
 /* Print Media */
