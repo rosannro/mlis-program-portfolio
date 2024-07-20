@@ -383,7 +383,7 @@ form {
 	margin: 80px auto 40px;
 }
 
-label, input, textarea {
+form label, form input, form textarea {
 	display: block;
 	font-family: "Source Sans 3", sans-serif;
 	font-size: 16px;
@@ -393,28 +393,28 @@ label, input, textarea {
 	border-radius: 5px;
 }
 
-label {
+form label {
 	margin-bottom: 10px;
 	padding: 0;
 	border: none;
 }
 
-input:not([type="submit"]) {
+form input:not([type="submit"]) {
 	width: 95%;
 	background-color: #FFFFFF;
 }
 
-input[type="submit"] {
+form input[type="submit"] {
 	width: 100px;
 	color: #FFFFFF;
 	background-color: #356BA2;
 }
 
-input[type="submit"]:hover {
+form input[type="submit"]:hover {
 	background-color: #99CCFF;
 }
 
-textarea {
+form textarea {
 	width: 95%;
 	height: 300px;
 	background-color: #FFFFFF;
@@ -427,7 +427,7 @@ textarea {
 		align-items: baseline;
 	}
 
-	label {
+	form label {
 		width: 150px;
 	}
 }
