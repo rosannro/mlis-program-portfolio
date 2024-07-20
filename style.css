@@ -73,12 +73,21 @@ h1, h2 {
 .page-title {
 	width: 100%;
 	max-width: 1200px;
+	height: 150px;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	color: #5E5548;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media (min-width: 769px) {
+	.page-title {
+		height: 250px;
+	}
 }
 
 footer {
@@ -158,9 +167,7 @@ footer {
 /* About Page */
 
 .about-title.page-title {
-	background-image: url("images/title-bg.jpg");
-		background-repeat: no-repeat;
-		background-size: 100%;
+	background-image: url("images/about-title-bg.jpg");
 }
 
 .about-content {
@@ -204,34 +211,8 @@ footer {
 /* Project Page */
 
 .project-title.page-title {
-	background-image: url("images/title-bg.jpg");
-		background-repeat: no-repeat;
-		background-size: 100%;
-		background-position: 0px -140px;
-}
-
-@media (min-width: 420px) {
-	.project-title.page-title {
-			background-position: 0px -170px;
-	}
-}
-
-@media (min-width: 520px) {
-	.project-title.page-title {
-			background-position: 0px -230px;
-	}
-}
-
-@media (min-width: 700px) {
-	.project-title.page-title {
-			background-position: 0px -320px;
-	}
-}
-
-@media (min-width: 970px) {
-	.project-title.page-title {
-			background-position: 0px -450px;
-	}
+	background-image: url("images/project-title-bg.jpg");
+	background-position-y: 30%;
 }
 
 .page-toc {
@@ -321,28 +302,7 @@ footer {
 /* Reflection Page */
 
 .reflection-title.page-title {
-	background-image: url("images/title-bg.jpg");
-		background-repeat: no-repeat;
-		background-size: 100%;
-		background-position: 0px -340px;
-}
-
-@media (min-width: 420px) {
-	.reflection-title.page-title {
-			background-position: 0px -490px;
-	}
-}
-
-@media (min-width: 620px) {
-	.reflection-title.page-title {
-			background-position: 0px -780px;
-	}
-}
-
-@media (min-width: 990px) {
-	.reflection-title.page-title {
-			background-position: 0px -1260px;
-	}
+	background-image: url("images/reflection-title-bg.jpg");
 }
 
 .reflection-content .column1 p:first-of-type::first-letter {
